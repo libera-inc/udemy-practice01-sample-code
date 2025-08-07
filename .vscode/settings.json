@@ -1,0 +1,14 @@
+{
+    // Live Sass Compilerの設定
+    "liveSassCompile.settings.formats": [
+        {
+            // CSSの出力形式
+            "format": "expanded",
+            // 出力されるファイルの拡張子
+            "extensionName": ".css",
+            // コンパイルされたCSSファイルの保存先
+            "savePath": "/css"
+        }
+    ],
+    "liveSassCompile.settings.showOutputWindowOn": "Warning"
+}

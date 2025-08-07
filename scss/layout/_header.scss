@@ -1,0 +1,234 @@
+@use "../global" as g;
+
+/*!
+layout > header
+------------------------------
+*/
+
+.l-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: var(--z-index-header);
+    padding: 20rem 12rem;
+
+    @include g.mq() {
+        padding: 24rem 65rem;
+    }
+
+    &.is-active {
+        box-shadow: rgba(100, 100, 111, 0.1) 0rem 7rem 29rem 0rem;
+    }
+}
+
+.l-header--top {
+    .l-header-logo-black {
+        display: none;
+    }
+
+    &.is-active {
+        .l-header-logo-white {
+            display: none;
+        }
+
+        .l-header-logo-black {
+            display: block;
+        }
+
+        .l-header-menu-item:not(.l-header-menu-item--contact) {
+            a {
+                @include g.mq() {
+                    color: var(--color-font-base);
+                }
+            }
+        }
+    }
+}
+
+.l-header-logo {
+    width: 240rem;
+
+    @include g.mq() {
+        width: 290rem;
+    }
+}
+
+.l-header-menu {
+    position: fixed;
+    left: auto;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    @include g.mq() {
+        position: static;
+        display: block;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+    }
+}
+
+.l-header-menu::backdrop {
+    display: none;
+}
+
+.l-header-menu-nav {
+    width: calc(100% - 55rem);
+    background-color: var(--color-primary);
+    padding: 40rem;
+    border-radius: 0 0 0 30rem;
+    color: var(--color-white);
+    margin-left: auto;
+
+    @include g.mq() {
+        width: auto;
+        background-color: transparent;
+        padding: 0;
+        border-radius: 0;
+        color: var(--color-font-base);
+    }
+}
+
+.l-header-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16rem;
+
+    @include g.mq() {
+        flex-direction: row;
+        align-items: center;
+        gap: 50rem;
+    }
+}
+
+.l-header-menu-item {
+    a {
+        display: block;
+
+        @include g.mq() {
+            display: inline;
+        }
+    }
+}
+
+.l-header-menu-item--top {
+    @include g.mq() {
+        display: none;
+    }
+}
+
+.l-header-menu-item--current {
+    @include g.mq() {
+        color: var(--color-primary);
+    }
+}
+
+.l-header-menu-item--white {
+    @include g.mq() {
+        color: var(--color-white);
+    }
+}
+
+.l-header-menu-item--contact {
+    @include g.mq() {
+        a {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            padding: 9rem 31rem;
+            display: flex;
+            gap: 9rem;
+            align-items: center;
+            border-radius: 100vh;
+            transition: background-color 0.3s, color 0.3s, border 0.3s;
+            border: 1rem solid var(--color-primary);
+
+            &::before {
+                content: "";
+                display: block;
+                width: 16rem;
+                height: 13rem;
+                background-color: var(--color-white);
+                mask-image: url("../img/icon-mail.svg");
+                mask-size: contain;
+                mask-repeat: no-repeat;
+                mask-position: center;
+                transition: background-color 0.3s;
+            }
+
+            @media (any-hover: hover) {
+                &:hover {
+                    background-color: var(--color-white);
+                    color: var(--color-primary);
+                    border: 1rem solid var(--color-primary);
+
+                    &::before {
+                        background-color: var(--color-primary);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.l-header-menu-text-en {
+    font-family: var(--font-family-en);
+    letter-spacing: 0.025em;
+    font-size: 28rem;
+
+    @include g.mq() {
+        font-size: 18rem;
+        line-height: 1;
+    }
+}
+
+.l-header-menu-text-ja {
+    display: block;
+    font-size: 14rem;
+
+    font-weight: bold;
+    opacity: 0.8;
+
+    @include g.mq() {
+        display: none;
+    }
+}
+
+.l-header-menu-open-button,
+.l-header-menu-close-button {
+    width: 50rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+
+    @include g.mq() {
+        display: none;
+    }
+}
+
+.l-header-menu-open-button {
+    background-color: var(--color-primary);
+
+    img {
+        width: 24rem;
+    }
+}
+
+.l-header-menu-close-button {
+    background-color: var(--color-white);
+    position: absolute;
+    right: 12rem;
+    top: 20rem;
+    outline: none;
+
+    img {
+        width: 28rem;
+    }
+}

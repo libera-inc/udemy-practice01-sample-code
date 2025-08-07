@@ -1,0 +1,42 @@
+@use "../global" as g;
+
+/*!
+component > breadcrumb
+------------------------------
+*/
+.c-breadcrumb {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.c-breadcrumb-item {
+    font-size: 14rem;
+    color: var(--color-font-light);
+    line-height: 1;
+    font-family: var(--font-family-en);
+    display: flex;
+    align-items: center;
+
+    @include g.mq() {
+        font-size: 16rem;
+    }
+
+    &:not(:last-child) {
+        &::after {
+            content: "";
+            width: 11rem;
+            height: 9rem;
+            mask-image: url("../img/icon-arrow.svg");
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            background-color: var(--color-font-light);
+            display: block;
+            margin: 0 10rem;
+        }
+    }
+}
+
+.c-breadcrumb-item--current {
+    color: var(--color-primary);
+}

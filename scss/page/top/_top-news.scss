@@ -1,0 +1,80 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-news
+------------------------------
+*/
+.top-news {
+    padding: 40rem 0 60rem;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 265rem;
+        height: 100%;
+        background-color: var(--color-bg-extra-light);
+        z-index: var(--z-index-negative);
+        border-radius: 50rem 0 0 0;
+
+        @include g.mq() {
+            width: 1080rem;
+        }
+    }
+
+    @include g.mq() {
+        padding: 96rem 0;
+    }
+}
+
+.top-news-inner {
+    @include g.mq() {
+        display: grid;
+        grid-template-columns: 1fr 760rem;
+        grid-template-rows: auto 1fr;
+        gap: 80rem 0;
+    }
+}
+
+.top-news-title {
+    @include g.mq() {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
+
+.top-news-list {
+    margin-top: 48rem;
+
+    @include g.mq() {
+        grid-column: 2/3;
+        grid-row: 1/3;
+        margin-top: 0;
+    }
+}
+
+.top-news-more {
+    margin-top: 32rem;
+    display: flex;
+    justify-content: flex-end;
+
+    @include g.mq() {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-top: 0;
+        display: block;
+    }
+
+    a {
+        @media (any-hover: hover) {
+            &:hover {
+                &:after {
+                    scale: 1.1;
+                }
+            }
+        }
+    }
+}

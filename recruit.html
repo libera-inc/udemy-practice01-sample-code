@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Recruit | Career Launch - 就活スクール</title>
+        <meta name="description" content="ページの説明" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+
+        <!-- favicon/webclipicon -->
+        <link rel="icon" href="img/favicon.ico" />
+        <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="img/webclip.png" />
+
+        <!-- ogp -->
+        <meta property="og:site_name" content="Career Launch - 就活スクール" />
+        <meta property="og:url" content="https://udemy-practice01.vercel.app/recruit.html" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Recruit | Career Launch - 就活スクール" />
+        <meta property="og:description" content="ページの説明" />
+        <meta property="og:image" content="https://udemy-practice01.vercel.app/img/ogp.png" />
+        <meta property="og:locale" content="ja_JP" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:description" content="ページの説明" />
+        <meta name="twitter:image:src" content="https://udemy-practice01.vercel.app/img/ogp.png" />
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/vendor/splide-core.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- js -->
+        <script src="js/vendor/gsap.min.js" defer></script>
+        <script src="js/vendor/ScrollTrigger.min.js" defer></script>
+        <script src="js/vendor/splide-extension-auto-scroll.min.js" defer></script>
+        <script src="js/vendor/splide.min.js" defer></script>
+        <script type="module" src="js/main.js"></script>
+
+        <!-- noindex -->
+        <meta name="robots" content="noindex" />
+    </head>
+    <body>
+        <header class="l-header js-header">
+            <p class="l-header-logo">
+                <a href="/">
+                    <img src="img/logo.svg" width="150" height="28" alt="Career Launch" decoding="async" />
+                </a>
+            </p>
+
+            <dialog class="l-header-menu js-header-menu" aria-label="メニュー">
+                <button class="l-header-menu-close-button js-header-menu-close-button">
+                    <img src="img/icon-cross.svg" width="28" height="28" alt="メニューを閉じる" decoding="async" />
+                </button>
+
+                <nav class="l-header-menu-nav" aria-label="メニュー">
+                    <ul class="l-header-menu-list">
+                        <li class="l-header-menu-item l-header-menu-item--top">
+                            <a href="/">
+                                <span class="l-header-menu-text-en">Top</span>
+                                <span class="l-header-menu-text-ja">トップ</span>
+                            </a>
+                        </li>
+                        <li class="l-header-menu-item">
+                            <a href="about.html" class="u-text-hover">
+                                <span class="l-header-menu-text-en">About</span>
+                                <span class="l-header-menu-text-ja">私たちについて</span>
+                            </a>
+                        </li>
+                        <li class="l-header-menu-item">
+                            <a href="service.html" class="u-text-hover">
+                                <span class="l-header-menu-text-en">Service</span>
+                                <span class="l-header-menu-text-ja">サービス</span>
+                            </a>
+                        </li>
+                        <li class="l-header-menu-item">
+                            <a href="news.html" class="u-text-hover">
+                                <span class="l-header-menu-text-en">News</span>
+                                <span class="l-header-menu-text-ja">お知らせ</span>
+                            </a>
+                        </li>
+                        <li class="l-header-menu-item l-header-menu-item--current">
+                            <a href="recruit.html" class="u-text-hover">
+                                <span class="l-header-menu-text-en">Recruit</span>
+                                <span class="l-header-menu-text-ja">採用情報</span>
+                            </a>
+                        </li>
+                        <li class="l-header-menu-item l-header-menu-item--contact">
+                            <a href="contact.html">
+                                <span class="l-header-menu-text-en">Contact</span>
+                                <span class="l-header-menu-text-ja">お問い合わせ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </dialog>
+
+            <button class="l-header-menu-open-button js-header-menu-open-button">
+                <img src="img/icon-dots.svg" width="24" height="4" alt="メニューを開く" decoding="async" />
+            </button>
+        </header>
+
+        <main class="u-pb">
+            <div class="c-page-kv js-header-trigger">
+                <div class="l-container">
+                    <div class="c-page-kv-inner">
+                        <div class="c-page-kv-title">
+                            <span>Recruit</span>
+                            <h1>採用情報</h1>
+                        </div>
+
+                        <ul class="c-breadcrumb">
+                            <li class="c-breadcrumb-item">
+                                <a href="/">Top</a>
+                            </li>
+
+                            <li class="c-breadcrumb-item c-breadcrumb-item--current">Recruit</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <section class="l-container u-pb">
+                <div class="c-title">
+                    <span class="c-title-en">Open Position</span>
+                    <h2 class="c-title-ja">募集職種</h2>
+                </div>
+
+                <div class="recruit-position-list">
+                    <section class="recruit-position-item">
+                        <h3 class="recruit-position-title-ja">キャリアカウンセラー</h3>
+                        <span class="recruit-position-title-en">Career counselor</span>
+                        <p class="recruit-position-description">学生の個別キャリア相談、自己分析サポート、面接指導を行います。</p>
+                    </section>
+
+                    <section class="recruit-position-item">
+                        <h3 class="recruit-position-title-ja">講師（ES・面接対策）</h3>
+                        <span class="recruit-position-title-en">Instructor</span>
+                        <p class="recruit-position-description">ES添削指導、模擬面接実施、グループディスカッション指導を行います。</p>
+                    </section>
+                </div>
+            </section>
+
+            <section class="recruit-benefit">
+                <div class="l-container">
+                    <div class="c-title">
+                        <span class="c-title-en">Benefit</span>
+                        <h2 class="c-title-ja" id="benefit-title">福利厚生・待遇</h2>
+                    </div>
+
+                    <table class="recruit-benefit-table" aria-labelledby="benefit-title">
+                        <tbody class="recruit-benefit-table-body">
+                            <tr class="recruit-benefit-table-item">
+                                <th>給料</th>
+                                <td>月給25万円～35万円（経験・能力による）</td>
+                            </tr>
+                            <tr class="recruit-benefit-table-item">
+                                <th>賞与</th>
+                                <td>年2回（6月・12月）</td>
+                            </tr>
+                            <tr class="recruit-benefit-table-item">
+                                <th>昇給</th>
+                                <td>年1回（4月）</td>
+                            </tr>
+                            <tr class="recruit-benefit-table-item">
+                                <th>休日・休暇</th>
+                                <td>完全週休2日制、年間休日120日</td>
+                            </tr>
+                            <tr class="recruit-benefit-table-item">
+                                <th>有給休暇</th>
+                                <td>年10月〜20日（動勤年数による）</td>
+                            </tr>
+                            <tr class="recruit-benefit-table-item">
+                                <th>社会保険</th>
+                                <td>健康保険、厚生年金、雇用・労災保険</td>
+                            </tr>
+                            <tr class="recruit-benefit-table-item">
+                                <th>研修制度</th>
+                                <td>入社時研修、外部セミナー参加支援</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="u-pt">
+                <div class="l-container">
+                    <div class="c-title">
+                        <span class="c-title-en">Culture</span>
+                        <h2 class="c-title-ja">働く環境</h2>
+                    </div>
+                </div>
+
+                <div class="splide js-recruit-culture-gallery recruit-culture-gallery">
+                    <div class="splide__track">
+                        <ul class="splide__list recruit-culture-gallery-list">
+                            <li class="splide__slide">
+                                <img src="img/recruit/culture.jpg" width="1200" height="803" alt="" decoding="async" />
+                            </li>
+
+                            <li class="splide__slide">
+                                <img src="img/recruit/culture02.jpg" width="1200" height="803" alt="" decoding="async" />
+                            </li>
+
+                            <li class="splide__slide">
+                                <img src="img/recruit/culture03.jpg" width="1200" height="803" alt="" decoding="async" />
+                            </li>
+
+                            <li class="splide__slide">
+                                <img src="img/recruit/culture04.jpg" width="1200" height="803" alt="" decoding="async" />
+                            </li>
+
+                            <li class="splide__slide">
+                                <img src="img/recruit/culture05.jpg" width="1200" height="803" alt="" decoding="async" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <div class="u-pt recruit-entry-button">
+                <div class="c-entry-button">
+                    <a href="entry.html">
+                        <img src="img/recruit-button-text.svg" width="356" height="362" alt="" decoding="async" />
+                        <span class="c-entry-button-text">
+                            <span class="c-button">Entry Form</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="l-footer">
+            <div class="l-footer-logo">
+                <a href="/">
+                    <img src="img/logo-white.svg" alt="Career Launch" decoding="async" width="251" height="46" />
+                </a>
+            </div>
+
+            <div class="l-footer-info">
+                <p class="l-footer-company">株式会社Career Launch</p>
+                <p class="l-footer-address">
+                    <span>〒101-0045</span>
+                    <span>東京都千代田区神田鍛冶町3-2-1</span>
+                    <span>神田サクラビル5F</span>
+                </p>
+                <div class="l-footer-contact">
+                    <p>TEL：03-1234-5678</p>
+                    <p>FAX：03-1234-5679</p>
+                </div>
+            </div>
+
+            <ul class="l-footer-nav">
+                <li class="l-footer-nav-item"><a href="about.html" class="u-text-hover">About</a></li>
+                <li class="l-footer-nav-item"><a href="service.html" class="u-text-hover">Service</a></li>
+                <li class="l-footer-nav-item"><a href="news.html" class="u-text-hover">News</a></li>
+                <li class="l-footer-nav-item"><a href="recruit.html" class="u-text-hover">Recruit</a></li>
+                <li class="l-footer-nav-item l-footer-nav-item--contact">
+                    <a href="contact.html">
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="l-footer-legal">
+                <ul class="l-footer-legal-nav">
+                    <li class="l-footer-legal-nav-item"><a href="company.html" class="u-text-hover">Company</a></li>
+                    <li class="l-footer-legal-nav-item"><a href="privacy.html" class="u-text-hover">Privacy Policy</a></li>
+                </ul>
+
+                <small class="l-footer-copyright">© 2025 株式会社Career Launch</small>
+            </div>
+        </footer>
+    </body>
+</html>

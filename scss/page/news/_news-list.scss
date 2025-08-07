@@ -1,0 +1,15 @@
+@use "../../global" as g;
+
+/*!
+page > news > news-list
+------------------------------
+*/
+.news-list {
+    margin-top: -16rem;
+    position: relative;
+    z-index: var(--z-index-default);
+
+    @include g.mq() {
+        margin-top: -24rem;
+    }
+}

@@ -1,0 +1,120 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-service
+------------------------------
+*/
+.top-service {
+    position: relative;
+    padding-top: 64rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40rem;
+
+    @include g.mq() {
+        grid-template-columns: 1fr 714rem;
+        gap: 65rem;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        height: 500rem;
+        width: calc(100% - 20rem);
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: var(--color-primary);
+        z-index: var(--z-index-negative);
+        border-radius: 0 0 50rem 0;
+
+        @include g.mq() {
+            width: calc(100% - 30rem);
+            height: 410rem;
+        }
+    }
+}
+
+.top-service-text {
+    font-size: 16rem;
+    color: var(--color-white);
+    margin-top: 40rem;
+    padding-right: 20rem;
+
+    @include g.mq() {
+        padding-right: 0;
+    }
+
+    span {
+        display: block;
+    }
+}
+
+.top-service-list {
+    padding-right: 20rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40rem;
+
+    @include g.mq() {
+        padding-right: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.top-service-item {
+    a {
+        @media (any-hover: hover) {
+            &:hover {
+                .top-service-item-img {
+                    img {
+                        scale: 1.03;
+                    }
+                }
+
+                .c-button {
+                    &::after {
+                        scale: 1.1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.top-service-item-img {
+    border-radius: 10rem;
+    overflow: hidden;
+
+    img {
+        transition: scale 0.3s;
+    }
+}
+
+.top-service-item-title-ja {
+    font-size: 22rem;
+    margin-top: 16rem;
+}
+
+.top-service-item-title-en {
+    margin-top: 2rem;
+    display: block;
+    color: var(--color-primary);
+    font-family: var(--font-family-en);
+    font-size: 15rem;
+}
+
+.top-service-item-text {
+    margin-top: 16rem;
+    font-size: 16rem;
+
+    span {
+        display: block;
+    }
+}
+
+.top-service-item-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16rem;
+}

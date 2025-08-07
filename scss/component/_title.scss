@@ -1,0 +1,97 @@
+@use "../global" as g;
+
+/*!
+component > title
+------------------------------
+*/
+.c-title {
+    line-height: 1;
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    gap: 14rem 18rem;
+
+    @include g.mq() {
+        display: inline-grid;
+        align-items: end;
+        grid-template-columns: 10rem auto auto;
+        gap: 14rem;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        width: 10rem;
+        aspect-ratio: 1/1;
+        background-color: var(--color-primary);
+        border-radius: 50%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;
+    }
+}
+
+.c-title--white {
+    &::before {
+        background-color: var(--color-white);
+    }
+}
+
+.c-title-en {
+    font-family: var(--font-family-en);
+    font-size: 40rem;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-weight: 400;
+
+    @include g.mq() {
+        display: block;
+        font-size: 50rem;
+        grid-row: 1/2;
+        margin-left: 10rem;
+    }
+}
+
+.c-title-en--white {
+    color: var(--color-white);
+}
+
+.c-title-ja {
+    color: var(--color-font-light);
+    font-size: 14rem;
+    font-weight: 400;
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    @include g.mq() {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+}
+
+.c-title-ja--white {
+    color: var(--color-white);
+}
+
+.c-title-small {
+    font-size: 16rem;
+    letter-spacing: 0.075em;
+    line-height: 1;
+    font-family: var(--font-family-en);
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+
+    @include g.mq() {
+        font-size: 20rem;
+        gap: 14rem;
+    }
+
+    &:before {
+        content: "";
+        display: block;
+        width: 6rem;
+        aspect-ratio: 1/1;
+        background-color: var(--color-primary);
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,76 @@
+@use "../global" as g;
+
+/*!
+component > page-kv
+------------------------------
+*/
+.c-page-kv {
+    background-color: var(--color-bg-light);
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    height: 365rem;
+
+    @include g.mq() {
+        height: 467rem;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 64rem;
+        background-color: var(--color-white);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 30rem 0 0 0;
+
+        @include g.mq() {
+            height: 96rem;
+            border-radius: 50rem 0 0 0;
+        }
+    }
+
+    > * {
+        width: 100%;
+    }
+}
+
+.c-page-kv-inner {
+    padding-bottom: 84rem;
+    display: flex;
+    flex-direction: column;
+    gap: 32rem;
+
+    @include g.mq() {
+        padding-bottom: 116rem;
+        gap: 56rem;
+    }
+}
+
+.c-page-kv-title {
+    span {
+        font-family: var(--font-family-en);
+        font-weight: 300;
+        font-size: 55rem;
+
+        line-height: 1;
+
+        @include g.mq() {
+            font-size: 72rem;
+        }
+    }
+
+    h1 {
+        font-size: 16rem;
+        line-height: 1;
+        color: var(--color-font-light);
+        margin-top: 22rem;
+
+        @include g.mq() {
+            font-size: 18rem;
+            margin-top: 28rem;
+        }
+    }
+}

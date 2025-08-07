@@ -1,0 +1,53 @@
+@use "../../global" as g;
+
+/*!
+page > recruit > recruit-position
+------------------------------
+*/
+.recruit-position-list {
+    margin-top: 40rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16rem;
+
+    @include g.mq() {
+        margin-top: 54rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60rem;
+    }
+}
+
+.recruit-position-item {
+    border-radius: 11rem;
+    border: 1rem solid var(--color-border);
+    padding: 31rem 19rem;
+
+    @include g.mq() {
+        padding: 39rem;
+    }
+}
+
+.recruit-position-title-ja {
+    font-size: 20rem;
+
+    @include g.mq() {
+        font-size: 28rem;
+    }
+}
+
+.recruit-position-title-en {
+    font-size: 15rem;
+
+    font-family: var(--font-family-en);
+    color: var(--color-primary);
+    margin-top: 4rem;
+    display: block;
+
+    @include g.mq() {
+        font-size: 16rem;
+    }
+}
+
+.recruit-position-description {
+    margin-top: 14rem;
+}

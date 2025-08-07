@@ -1,0 +1,72 @@
+@use "../../global" as g;
+
+/*!
+page > service > service-case
+------------------------------
+*/
+.service-case-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40rem;
+    margin-top: 40rem;
+
+    @include g.mq() {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 39rem;
+        margin-top: 54rem;
+    }
+}
+
+.service-case-item {
+    a {
+        @media (any-hover: hover) {
+            &:hover {
+                .service-case-item-img {
+                    img {
+                        scale: 1.03;
+                    }
+                }
+
+                .c-button {
+                    &:after {
+                        scale: 1.1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.service-case-item-img {
+    overflow: hidden;
+    border-radius: 10rem;
+
+    @include g.mq() {
+        border-radius: 12rem;
+    }
+
+    img {
+        transition: scale 0.3s;
+    }
+}
+
+.service-case-item-text {
+    font-size: 14rem;
+    letter-spacing: 0.075em;
+    margin-top: 14rem;
+
+    span {
+        color: var(--color-font-light);
+    }
+}
+
+.service-case-item-title {
+    margin-top: 8rem;
+    line-height: 1.6;
+}
+
+.service-case-item-button {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: flex-end;
+}

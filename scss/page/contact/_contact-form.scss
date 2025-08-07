@@ -1,0 +1,67 @@
+@use "../../global" as g;
+
+/*!
+page > contact > contact-form
+------------------------------
+*/
+.contact-form {
+    position: relative;
+    z-index: var(--z-index-default);
+    display: flex;
+    flex-direction: column;
+    gap: 24rem;
+
+    @include g.mq() {
+        gap: 32rem;
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+}
+
+.contact-form-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6rem;
+
+    @include g.mq() {
+        grid-template-columns: subgrid;
+        grid-column: 1 / -1;
+        align-items: start;
+        gap: 64rem;
+    }
+}
+
+.contact-form-item--consent {
+    gap: 16rem;
+
+    @include g.mq() {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-form-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include g.mq() {
+        gap: 8rem;
+        justify-content: flex-start;
+        margin-top: 12rem;
+    }
+}
+
+.contact-form-consent-text {
+    text-align: center;
+    font-size: 14rem;
+
+    a {
+        text-decoration: underline;
+
+        @media (any-hover: hover) {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

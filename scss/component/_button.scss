@@ -1,0 +1,51 @@
+@use "../global" as g;
+
+/*!
+component > button
+------------------------------
+*/
+.c-button {
+    --font-size: 18rem;
+    --gap: 14rem;
+    font-family: var(--font-family-en);
+    line-height: 1;
+    color: var(--color-primary);
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: var(--gap);
+    font-size: var(--font-size);
+
+    @include g.mq() {
+        --font-size: 20rem;
+        --gap: 24rem;
+    }
+
+    &:after {
+        --size: 47rem;
+        --dot-size: 5rem;
+        content: "";
+        display: block;
+        width: var(--size);
+        aspect-ratio: 1/1;
+        background-color: var(--color-white);
+        border: calc((var(--size) - var(--dot-size)) / 2) solid var(--color-primary);
+        border-radius: 50%;
+        transition: scale 0.3s;
+
+        @include g.mq() {
+            --size: 58rem;
+            --dot-size: 6rem;
+        }
+    }
+}
+
+.c-button--small {
+    --font-size: 16rem;
+    --gap: 10rem;
+
+    &:after {
+        --size: 32rem;
+        --dot-size: 4rem;
+    }
+}

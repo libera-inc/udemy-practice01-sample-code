@@ -1,0 +1,50 @@
+@use "../global" as g;
+
+/*!
+component > entry-button
+------------------------------
+*/
+.c-entry-button {
+    width: 290rem;
+    overflow: hidden;
+
+    @include g.mq() {
+        width: 355rem;
+    }
+
+    a {
+        position: relative;
+        display: block;
+        border-radius: 50%;
+
+        @media (any-hover: hover) {
+            &:hover {
+                .c-button {
+                    &:after {
+                        scale: 1.1;
+                    }
+                }
+            }
+        }
+    }
+
+    img {
+        animation: rotate 20s linear infinite;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.c-entry-button-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+}

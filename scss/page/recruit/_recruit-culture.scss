@@ -1,0 +1,24 @@
+@use "../../global" as g;
+
+/*!
+page > recruit > recruit-culture
+------------------------------
+*/
+.recruit-culture-gallery {
+    margin-top: 40rem;
+}
+
+.recruit-culture-gallery-list {
+    img {
+        border-radius: 10rem;
+
+        @include g.mq() {
+            border-radius: 10rem;
+        }
+    }
+}
+
+.recruit-culture-entry-button {
+    display: grid;
+    place-items: center;
+}
