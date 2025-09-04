@@ -8,6 +8,8 @@ page > contact > contact-form
     display: grid;
     grid-template-columns: 1fr;
     gap: 24rem;
+    position: relative;
+    z-index: 1;
 
     @include g.mq() {
         gap: 32rem;
