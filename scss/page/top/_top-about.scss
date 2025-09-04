@@ -39,10 +39,10 @@ page > top > top-about
 }
 
 .top-about-message-en {
-    font-family: var(--font-family-en);
-    color: var(--color-primary);
-    font-size: 15rem;
     margin-top: 8rem;
+    font-size: 15rem;
+    color: var(--color-primary);
+    font-family: var(--font-family-en);
 
     @include g.mq() {
         font-size: 16rem;
@@ -74,7 +74,7 @@ page > top > top-about
     a {
         @media (any-hover: hover) {
             &:hover {
-                &::after {
+                &:after {
                     scale: 1.1;
                 }
             }

@@ -12,22 +12,10 @@
         <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="img/webclip.png" />
 
-        <!-- ogp -->
-        <meta property="og:site_name" content="Career Launch - 就活スクール" />
-        <meta property="og:url" content="https://udemy-practice01.vercel.app/recruit.html" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Recruit | Career Launch - 就活スクール" />
-        <meta property="og:description" content="ページの説明" />
-        <meta property="og:image" content="https://udemy-practice01.vercel.app/img/ogp.png" />
-        <meta property="og:locale" content="ja_JP" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:description" content="ページの説明" />
-        <meta name="twitter:image:src" content="https://udemy-practice01.vercel.app/img/ogp.png" />
-
         <!-- font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
 
         <!-- css -->
         <link rel="stylesheet" href="css/vendor/splide-core.min.css" />
@@ -36,8 +24,8 @@
         <!-- js -->
         <script src="js/vendor/gsap.min.js" defer></script>
         <script src="js/vendor/ScrollTrigger.min.js" defer></script>
-        <script src="js/vendor/splide-extension-auto-scroll.min.js" defer></script>
         <script src="js/vendor/splide.min.js" defer></script>
+        <script src="js/vendor/splide-extension-auto-scroll.min.js" defer></script>
         <script type="module" src="js/main.js"></script>
 
         <!-- noindex -->
@@ -47,7 +35,7 @@
         <header class="l-header js-header">
             <p class="l-header-logo">
                 <a href="/">
-                    <img src="img/logo.svg" width="150" height="28" alt="Career Launch" decoding="async" />
+                    <img src="img/logo.svg" width="251" height="46" alt="Career Launch 就活スクール" decoding="async" />
                 </a>
             </p>
 
@@ -56,40 +44,40 @@
                     <img src="img/icon-cross.svg" width="28" height="28" alt="メニューを閉じる" decoding="async" />
                 </button>
 
-                <nav class="l-header-menu-nav" aria-label="メニュー">
+                <nav class="l-header-menu-nav">
                     <ul class="l-header-menu-list">
                         <li class="l-header-menu-item l-header-menu-item--top">
-                            <a href="/">
+                            <a href="/" class="l-header-menu-link">
                                 <span class="l-header-menu-text-en">Top</span>
                                 <span class="l-header-menu-text-ja">トップ</span>
                             </a>
                         </li>
                         <li class="l-header-menu-item">
-                            <a href="about.html" class="u-text-hover">
+                            <a href="about.html" class="l-header-menu-link u-text-hover">
                                 <span class="l-header-menu-text-en">About</span>
                                 <span class="l-header-menu-text-ja">私たちについて</span>
                             </a>
                         </li>
                         <li class="l-header-menu-item">
-                            <a href="service.html" class="u-text-hover">
+                            <a href="service.html" class="l-header-menu-link u-text-hover">
                                 <span class="l-header-menu-text-en">Service</span>
                                 <span class="l-header-menu-text-ja">サービス</span>
                             </a>
                         </li>
                         <li class="l-header-menu-item">
-                            <a href="news.html" class="u-text-hover">
+                            <a href="news.html" class="l-header-menu-link u-text-hover">
                                 <span class="l-header-menu-text-en">News</span>
                                 <span class="l-header-menu-text-ja">お知らせ</span>
                             </a>
                         </li>
-                        <li class="l-header-menu-item l-header-menu-item--current">
-                            <a href="recruit.html" class="u-text-hover">
+                        <li class="l-header-menu-item">
+                            <a href="recruit.html" class="l-header-menu-link l-header-menu-link--current u-text-hover">
                                 <span class="l-header-menu-text-en">Recruit</span>
                                 <span class="l-header-menu-text-ja">採用情報</span>
                             </a>
                         </li>
-                        <li class="l-header-menu-item l-header-menu-item--contact">
-                            <a href="contact.html">
+                        <li class="l-header-menu-item">
+                            <a href="contact.html" class="l-header-menu-link l-header-menu-link--contact">
                                 <span class="l-header-menu-text-en">Contact</span>
                                 <span class="l-header-menu-text-ja">お問い合わせ</span>
                             </a>
@@ -103,27 +91,28 @@
             </button>
         </header>
 
-        <main class="u-pb">
+        <main>
             <div class="c-page-kv js-header-trigger">
                 <div class="l-container">
                     <div class="c-page-kv-inner">
-                        <div class="c-page-kv-title">
-                            <span>Recruit</span>
-                            <h1>採用情報</h1>
+                        <div class="c-page-kv-title-wrap">
+                            <span class="c-page-kv-title-en">Recruit</span>
+                            <h1 class="c-page-kv-title-ja">採用情報</h1>
                         </div>
 
-                        <ul class="c-breadcrumb">
-                            <li class="c-breadcrumb-item">
-                                <a href="/">Top</a>
-                            </li>
-
-                            <li class="c-breadcrumb-item c-breadcrumb-item--current">Recruit</li>
-                        </ul>
+                        <div class="c-page-kv-breadcrumb">
+                            <ol class="c-breadcrumb">
+                                <li class="c-breadcrumb-item">
+                                    <a href="">Top</a>
+                                </li>
+                                <li class="c-breadcrumb-item c-breadcrumb-item--current">Recruit</li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <section class="l-container u-pb">
+            <section class="recruit-position u-pb l-container">
                 <div class="c-title">
                     <span class="c-title-en">Open Position</span>
                     <h2 class="c-title-ja">募集職種</h2>
@@ -133,29 +122,29 @@
                     <section class="recruit-position-item">
                         <h3 class="recruit-position-title-ja">キャリアカウンセラー</h3>
                         <span class="recruit-position-title-en">Career counselor</span>
-                        <p class="recruit-position-description">学生の個別キャリア相談、自己分析サポート、面接指導を行います。</p>
+                        <p class="recruit-position-text">学生の個別キャリア相談、自己分析サポート、面接指導を行います。</p>
                     </section>
 
                     <section class="recruit-position-item">
                         <h3 class="recruit-position-title-ja">講師（ES・面接対策）</h3>
                         <span class="recruit-position-title-en">Instructor</span>
-                        <p class="recruit-position-description">ES添削指導、模擬面接実施、グループディスカッション指導を行います。</p>
+                        <p class="recruit-position-text">ES添削指導、模擬面接実施、グループディスカッション指導を行います。</p>
                     </section>
                 </div>
             </section>
 
-            <section class="recruit-benefit">
+            <section class="recruit-benefit u-ptb">
                 <div class="l-container">
                     <div class="c-title">
                         <span class="c-title-en">Benefit</span>
-                        <h2 class="c-title-ja" id="benefit-title">福利厚生・待遇</h2>
+                        <h2 class="c-title-ja">福利厚生・待遇</h2>
                     </div>
 
-                    <table class="recruit-benefit-table" aria-labelledby="benefit-title">
+                    <table class="recruit-benefit-table" aria-label="福利厚生・待遇">
                         <tbody class="recruit-benefit-table-body">
                             <tr class="recruit-benefit-table-item">
                                 <th>給料</th>
-                                <td>月給25万円～35万円（経験・能力による）</td>
+                                <td>月給25万円〜35万円（経験・能力による）</td>
                             </tr>
                             <tr class="recruit-benefit-table-item">
                                 <th>賞与</th>
@@ -186,7 +175,7 @@
                 </div>
             </section>
 
-            <section class="u-pt">
+            <section class="recruit-culture u-ptb">
                 <div class="l-container">
                     <div class="c-title">
                         <span class="c-title-en">Culture</span>
@@ -194,36 +183,36 @@
                     </div>
                 </div>
 
-                <div class="splide js-recruit-culture-gallery recruit-culture-gallery">
+                <div class="js-recruit-culture-gallery recruit-culture-gallery splide">
                     <div class="splide__track">
                         <ul class="splide__list recruit-culture-gallery-list">
                             <li class="splide__slide">
-                                <img src="img/recruit/culture.jpg" width="1200" height="803" alt="" decoding="async" />
+                                <img src="img/recruit/culture.jpg" width="223" height="149" alt="" decoding="async" />
                             </li>
 
                             <li class="splide__slide">
-                                <img src="img/recruit/culture02.jpg" width="1200" height="803" alt="" decoding="async" />
+                                <img src="img/recruit/culture02.jpg" width="223" height="149" alt="" decoding="async" />
                             </li>
 
                             <li class="splide__slide">
-                                <img src="img/recruit/culture03.jpg" width="1200" height="803" alt="" decoding="async" />
+                                <img src="img/recruit/culture03.jpg" width="223" height="149" alt="" decoding="async" />
                             </li>
 
                             <li class="splide__slide">
-                                <img src="img/recruit/culture04.jpg" width="1200" height="803" alt="" decoding="async" />
+                                <img src="img/recruit/culture04.jpg" width="223" height="149" alt="" decoding="async" />
                             </li>
 
                             <li class="splide__slide">
-                                <img src="img/recruit/culture05.jpg" width="1200" height="803" alt="" decoding="async" />
+                                <img src="img/recruit/culture05.jpg" width="223" height="149" alt="" decoding="async" />
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <div class="u-pt recruit-entry-button">
+            <div class="u-pb recruit-entry">
                 <div class="c-entry-button">
-                    <a href="entry.html">
+                    <a href="" class="c-entry-button-link">
                         <img src="img/recruit-button-text.svg" width="356" height="362" alt="" decoding="async" />
                         <span class="c-entry-button-text">
                             <span class="c-button">Entry Form</span>
@@ -236,7 +225,7 @@
         <footer class="l-footer">
             <div class="l-footer-logo">
                 <a href="/">
-                    <img src="img/logo-white.svg" alt="Career Launch" decoding="async" width="251" height="46" />
+                    <img src="img/logo-white.svg" width="251" height="46" alt="Career Launch 就活スクール" decoding="async" />
                 </a>
             </div>
 
@@ -253,22 +242,18 @@
                 </div>
             </div>
 
-            <ul class="l-footer-nav">
-                <li class="l-footer-nav-item"><a href="about.html" class="u-text-hover">About</a></li>
-                <li class="l-footer-nav-item"><a href="service.html" class="u-text-hover">Service</a></li>
-                <li class="l-footer-nav-item"><a href="news.html" class="u-text-hover">News</a></li>
-                <li class="l-footer-nav-item"><a href="recruit.html" class="u-text-hover">Recruit</a></li>
-                <li class="l-footer-nav-item l-footer-nav-item--contact">
-                    <a href="contact.html">
-                        <span>Contact</span>
-                    </a>
-                </li>
+            <ul class="l-footer-menu-list">
+                <li class="l-footer-menu-item"><a href="about.html" class="u-text-hover">About</a></li>
+                <li class="l-footer-menu-item"><a href="service.html" class="u-text-hover">Service</a></li>
+                <li class="l-footer-menu-item"><a href="news.html" class="u-text-hover">News</a></li>
+                <li class="l-footer-menu-item"><a href="recruit.html" class="u-text-hover">Recruit</a></li>
+                <li class="l-footer-menu-item l-footer-menu-item--contact"><a href="contact.html" class="u-text-hover">Contact</a></li>
             </ul>
 
             <div class="l-footer-legal">
-                <ul class="l-footer-legal-nav">
-                    <li class="l-footer-legal-nav-item"><a href="company.html" class="u-text-hover">Company</a></li>
-                    <li class="l-footer-legal-nav-item"><a href="privacy.html" class="u-text-hover">Privacy Policy</a></li>
+                <ul class="l-footer-legal-list">
+                    <li class="l-footer-legal-item"><a href="" class="u-text-hover">Company</a></li>
+                    <li class="l-footer-legal-item"><a href="" class="u-text-hover">Privacy Policy</a></li>
                 </ul>
 
                 <small class="l-footer-copyright">© 2025 株式会社Career Launch</small>

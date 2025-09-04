@@ -5,15 +5,12 @@ page > contact > contact-form
 ------------------------------
 */
 .contact-form {
-    position: relative;
-    z-index: var(--z-index-default);
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 24rem;
 
     @include g.mq() {
         gap: 32rem;
-        display: grid;
         grid-template-columns: auto 1fr;
     }
 }
@@ -25,13 +22,13 @@ page > contact > contact-form
 
     @include g.mq() {
         grid-template-columns: subgrid;
-        grid-column: 1 / -1;
+        grid-column: 1/-1;
         align-items: start;
         gap: 64rem;
     }
 }
 
-.contact-form-item--consent {
+.contact-form-item--submit {
     gap: 16rem;
 
     @include g.mq() {
@@ -41,17 +38,17 @@ page > contact > contact-form
 
 .contact-form-label {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 
     @include g.mq() {
-        gap: 8rem;
         justify-content: flex-start;
-        margin-top: 12rem;
+        gap: 8rem;
+        margin-top: 14rem;
     }
 }
 
-.contact-form-consent-text {
+.contact-form-consent {
     text-align: center;
     font-size: 14rem;
 
@@ -64,4 +61,9 @@ page > contact > contact-form
             }
         }
     }
+}
+
+.contact-form-button {
+    display: grid;
+    place-items: center;
 }

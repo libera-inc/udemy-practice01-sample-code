@@ -6,10 +6,10 @@ component > page-kv
 */
 .c-page-kv {
     background-color: var(--color-bg-light);
+    height: 365rem;
     position: relative;
     display: flex;
     align-items: flex-end;
-    height: 365rem;
 
     @include g.mq() {
         height: 467rem;
@@ -22,8 +22,8 @@ component > page-kv
         height: 64rem;
         background-color: var(--color-white);
         position: absolute;
-        bottom: 0;
         left: 0;
+        bottom: 0;
         border-radius: 30rem 0 0 0;
 
         @include g.mq() {
@@ -49,28 +49,33 @@ component > page-kv
     }
 }
 
-.c-page-kv-title {
-    span {
-        font-family: var(--font-family-en);
-        font-weight: 300;
-        font-size: 55rem;
+.c-page-kv-title-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 22rem;
 
-        line-height: 1;
-
-        @include g.mq() {
-            font-size: 72rem;
-        }
+    @include g.mq() {
+        gap: 28rem;
     }
+}
 
-    h1 {
-        font-size: 16rem;
-        line-height: 1;
-        color: var(--color-font-light);
-        margin-top: 22rem;
+.c-page-kv-title-en {
+    font-family: var(--font-family-en);
+    font-weight: 300;
+    font-size: 55rem;
+    line-height: 1;
 
-        @include g.mq() {
-            font-size: 18rem;
-            margin-top: 28rem;
-        }
+    @include g.mq() {
+        font-size: 72rem;
     }
+}
+
+.c-page-kv-title-ja {
+    line-height: 1;
+    color: var(--color-font-light);
+}
+
+.c-page-kv-breadcrumb {
+    display: flex;
+    justify-content: flex-end;
 }

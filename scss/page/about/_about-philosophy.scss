@@ -5,15 +5,15 @@ page > about > about-philosophy
 ------------------------------
 */
 .about-philosophy-list {
-    margin-top: 48rem;
     display: grid;
     grid-template-columns: 1fr;
     gap: 24rem;
+    margin-top: 48rem;
 
     @include g.mq() {
         margin-top: 64rem;
-        gap: 40rem;
         grid-template-columns: repeat(3, 1fr);
+        gap: 32rem;
         padding-inline: 32rem;
     }
 }
@@ -21,15 +21,15 @@ page > about > about-philosophy
 .about-philosophy-item {
     width: 300rem;
     aspect-ratio: 1/1;
+    margin-inline: auto;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--color-bg-extra-light);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     gap: 16rem;
-    background-color: var(--color-bg-extra-light);
-    border-radius: 50%;
-    text-align: center;
-    margin-inline: auto;
 
     @include g.mq() {
         width: 352rem;

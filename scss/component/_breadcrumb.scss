@@ -6,7 +6,6 @@ component > breadcrumb
 */
 .c-breadcrumb {
     display: flex;
-    justify-content: flex-end;
 }
 
 .c-breadcrumb-item {
@@ -24,14 +23,14 @@ component > breadcrumb
     &:not(:last-child) {
         &::after {
             content: "";
+            display: inline-block;
             width: 11rem;
-            height: 9rem;
+            height: 8rem;
             mask-image: url("../img/icon-arrow.svg");
             mask-size: contain;
             mask-repeat: no-repeat;
             mask-position: center;
             background-color: var(--color-font-light);
-            display: block;
             margin: 0 10rem;
         }
     }

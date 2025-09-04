@@ -6,7 +6,6 @@ component > pagination
 */
 .c-pagination-list {
     display: flex;
-    flex-wrap: wrap;
     gap: 6rem;
     justify-content: center;
 }
@@ -20,11 +19,12 @@ component > pagination
     border-radius: 50%;
     display: grid;
     place-items: center;
+    font-size: 16rem;
 }
 
 .c-pagination-link {
     background-color: var(--color-bg-light);
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 
     @media (any-hover: hover) {
         &:hover {
@@ -38,34 +38,32 @@ component > pagination
     }
 }
 
-.c-pagination-number--current {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-}
-
-.c-pagination-dots-icon {
-    mask-image: url("../img/icon-dots-small.svg");
-    background-color: var(--color-font-base);
-    mask-size: contain;
-    mask-repeat: no-repeat;
-    mask-position: center;
-    display: block;
-    width: 10rem;
-    aspect-ratio: 1/1;
-}
-
 .c-pagination-icon {
-    mask-image: url("../img/icon-arrow.svg");
-    background-color: var(--color-font-base);
-    mask-size: contain;
-    mask-repeat: no-repeat;
+    mask-image: url(../img/icon-arrow.svg);
+    mask-size: cover;
     mask-position: center;
     display: block;
     width: 10rem;
     aspect-ratio: 1/1;
+    background-color: var(--color-font-base);
     transition: background-color 0.3s;
 }
 
 .c-pagination-icon--prev {
     rotate: 180deg;
+}
+
+.c-pagination-number--current {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.c-pagination-dot-icon {
+    mask-image: url(../img/icon-dots-small.svg);
+    mask-size: cover;
+    mask-position: center;
+    background-color: var(--color-font-base);
+    display: block;
+    width: 10rem;
+    height: 3rem;
 }

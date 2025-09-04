@@ -12,9 +12,9 @@ component > button
     color: var(--color-primary);
     display: inline-flex;
     align-items: center;
-    white-space: nowrap;
     gap: var(--gap);
     font-size: var(--font-size);
+    white-space: nowrap;
 
     @include g.mq() {
         --font-size: 20rem;
@@ -28,9 +28,9 @@ component > button
         display: block;
         width: var(--size);
         aspect-ratio: 1/1;
+        border-radius: 50%;
         background-color: var(--color-white);
         border: calc((var(--size) - var(--dot-size)) / 2) solid var(--color-primary);
-        border-radius: 50%;
         transition: scale 0.3s;
 
         @include g.mq() {
@@ -44,7 +44,7 @@ component > button
     --font-size: 16rem;
     --gap: 10rem;
 
-    &:after {
+    &::after {
         --size: 32rem;
         --dot-size: 4rem;
     }

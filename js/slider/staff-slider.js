@@ -2,24 +2,20 @@
  * スタッフスライダー
  */
 export const initializeAboutStaffSlider = () => {
-    const sliderElement = document.querySelector(".js-about-staff-slider");
+    const aboutStaffSlider = document.querySelector(".js-about-staff-slider");
 
-    // 要素が存在しない場合return
-    if (!sliderElement) return;
+    if (!aboutStaffSlider) return;
 
-    // Splideの初期化
-    const splide = new Splide(sliderElement, {
-        type: "loop", // ループ再生
-        perPage: 3, // スライド表示数
-        perMove: 1, // スライド移動数
-        gap: "40rem", // スライド間の間隔
-        padding: { left: "172rem", right: "259rem" }, // 左右の余白
-        arrows: false, // 矢印非表示
-        pagination: false, // ページネーション非表示
-        autoplay: true, // 自動再生
-        interval: 3000, // 自動再生の間隔（3秒）
-        pauseOnHover: true, // ホバーで一時停止
-        pauseOnFocus: true, // フォーカスで一時停止
+    const splide = new Splide(aboutStaffSlider, {
+        type: "loop",
+        perPage: 3,
+        perMove: 1,
+        arrows: false,
+        pagination: false,
+        autoplay: true,
+        interval: 3000,
+        gap: "40rem",
+        padding: { left: "172rem", right: "259rem" },
         breakpoints: {
             899: {
                 perPage: 1,
@@ -28,6 +24,5 @@ export const initializeAboutStaffSlider = () => {
             },
         },
     });
-
     splide.mount();
 };

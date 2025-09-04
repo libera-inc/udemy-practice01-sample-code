@@ -27,8 +27,8 @@ page > about > about-company
     @include g.mq() {
         grid-column: 2/3;
         grid-row: 1/3;
-        align-self: end;
         margin-top: 0;
+        align-self: end;
     }
 
     img {
@@ -65,11 +65,11 @@ page > about > about-company
     border-bottom: 1rem solid var(--color-border);
 
     @include g.mq() {
-        padding: 24rem 8rem;
         grid-template-columns: subgrid;
         align-items: center;
-        gap: 0 40rem;
         grid-column: 1/-1;
+        padding: 24rem 8rem;
+        gap: 0 40rem;
     }
 
     th {

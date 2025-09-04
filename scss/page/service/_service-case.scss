@@ -28,7 +28,7 @@ page > service > service-case
                 }
 
                 .c-button {
-                    &:after {
+                    &::after {
                         scale: 1.1;
                     }
                 }
@@ -38,8 +38,8 @@ page > service > service-case
 }
 
 .service-case-item-img {
-    overflow: hidden;
     border-radius: 10rem;
+    overflow: hidden;
 
     @include g.mq() {
         border-radius: 12rem;
@@ -50,17 +50,17 @@ page > service > service-case
     }
 }
 
-.service-case-item-text {
-    font-size: 14rem;
-    letter-spacing: 0.075em;
+.service-case-item-title {
     margin-top: 14rem;
+    letter-spacing: 0.075em;
+    font-size: 14rem;
 
     span {
         color: var(--color-font-light);
     }
 }
 
-.service-case-item-title {
+.service-case-item-text {
     margin-top: 8rem;
     line-height: 1.6;
 }

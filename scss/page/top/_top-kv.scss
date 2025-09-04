@@ -5,31 +5,30 @@ page > top > top-kv
 ------------------------------
 */
 .top-kv {
-    height: 485rem;
     background-image: url(../img/top/top-kv-sp.jpg);
     background-size: cover;
     background-position: center;
+    height: 485rem;
     display: flex;
     align-items: flex-end;
 
     @include g.mq() {
-        // height: 769rem;
-        height: 100vh;
         background-image: url(../img/top/top-kv.jpg);
+        height: 769rem;
         position: relative;
     }
 }
 
 .top-kv-text {
-    margin-bottom: 47rem;
+    padding-bottom: 47rem;
     color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 21rem;
 
     @include g.mq() {
-        margin-bottom: 0;
-        position: absolute;
-        left: 0;
-        top: 36.4%;
-        width: 100%;
+        padding-bottom: 190rem;
+        gap: 54rem;
     }
 }
 
@@ -38,6 +37,7 @@ page > top > top-kv
     line-height: 1.05;
     font-size: 43rem;
     font-weight: 300;
+    text-shadow: 0 3rem 7rem rgba(0, 0, 0, 0.0588);
 
     @include g.mq() {
         font-size: 101rem;
@@ -53,11 +53,9 @@ page > top > top-kv
     letter-spacing: 0.2em;
     font-size: 18rem;
     line-height: 1.5;
-    margin-top: 21rem;
 
     @include g.mq() {
         font-size: 22rem;
-        margin-top: 54rem;
     }
 }
 
@@ -65,29 +63,32 @@ page > top > top-kv
     display: none;
 
     @include g.mq() {
+        display: flex;
+        gap: 6rem;
         position: absolute;
         right: 0;
         bottom: 0;
-        display: block;
         background-color: var(--color-white);
-        display: flex;
-        gap: 6rem;
-        padding: 49rem 22rem 32rem 36rem;
         border-radius: 39rem 0 0 0;
-    }
+        padding: 49rem 22rem 32rem 36rem;
 
-    &::before {
-        content: "";
-        width: 46rem;
-        aspect-ratio: 1/1;
-        position: absolute;
-        bottom: 0;
-        left: -46rem;
-        background-image: url("../img/top/curve.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
+        &::after {
+            content: "";
+            display: block;
+            width: 46rem;
+            aspect-ratio: 1/1;
+            background-image: url(../img/top/curve.svg);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            bottom: 0;
+            left: -46rem;
+        }
     }
+}
+
+.top-kv-scroll-hint {
+    width: 4rem;
 }
 
 .top-kv-scroll-text {
@@ -96,8 +97,4 @@ page > top > top-kv
     line-height: 1;
     font-size: 15rem;
     writing-mode: vertical-rl;
-}
-
-.top-kv-scroll-hint {
-    width: 4rem;
 }

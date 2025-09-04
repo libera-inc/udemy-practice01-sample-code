@@ -11,14 +11,11 @@ page > recruit > recruit-culture
 .recruit-culture-gallery-list {
     img {
         border-radius: 10rem;
+        width: 223rem;
 
         @include g.mq() {
-            border-radius: 10rem;
+            border-radius: 12rem;
+            width: 350rem;
         }
     }
-}
-
-.recruit-culture-entry-button {
-    display: grid;
-    place-items: center;
 }

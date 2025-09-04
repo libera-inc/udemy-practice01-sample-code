@@ -15,18 +15,18 @@ page > about > about-staff
     &::before {
         content: "";
         display: block;
-        height: 430rem;
-        width: calc(100% - 20rem);
         position: absolute;
         left: 0;
         top: 0;
+        width: 355rem;
+        height: 430rem;
         background-color: var(--color-primary);
-        z-index: var(--z-index-negative);
         border-radius: 0 0 0 50rem;
+        z-index: var(--z-index-negative);
 
         @include g.mq() {
             height: 390rem;
-            width: calc(100% - 40rem);
+            width: 1326rem;
             left: auto;
             right: 0;
         }
@@ -50,11 +50,19 @@ page > about > about-staff
     font-size: 16rem;
 }
 
-.about-staff-list {
+.about-staff-slider {
     margin-top: 40rem;
 
     @include g.mq() {
         margin-top: 64rem;
+    }
+}
+
+.about-staff-item {
+    width: 230rem;
+
+    @include g.mq() {
+        width: 285rem;
     }
 }
 

@@ -6,11 +6,6 @@ page > recruit > recruit-benefit
 */
 .recruit-benefit {
     background-color: var(--color-bg-extra-light);
-    padding: 64rem 0;
-
-    @include g.mq() {
-        padding: 96rem 0;
-    }
 }
 
 .recruit-benefit-table {
@@ -37,11 +32,11 @@ page > recruit > recruit-benefit
     border-bottom: 1rem solid var(--color-border);
 
     @include g.mq() {
-        padding: 24rem 8rem;
         display: grid;
         grid-template-columns: 100rem 1fr;
         align-items: center;
         gap: 0 34rem;
+        padding: 24rem 8rem;
     }
 
     th {

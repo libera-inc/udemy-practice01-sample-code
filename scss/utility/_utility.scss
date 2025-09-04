@@ -4,7 +4,7 @@
 utility > utility
 ------------------------------
 */
-/* 非表示 */
+// 非表示
 .u-visually-hidden {
     position: absolute !important;
     white-space: nowrap !important;
@@ -18,24 +18,7 @@ utility > utility
     margin: -1px !important;
 }
 
-/* テキストホバー */
-.u-text-hover {
-    background-image: linear-gradient(currentColor, currentColor) !important;
-    background-position: 0 100% !important;
-    background-size: 0 1px !important;
-    background-repeat: no-repeat !important;
-    transition: background-size 0.3s !important;
-
-    @include g.mq() {
-        @media (any-hover: hover) {
-            &:hover {
-                background-size: 100% 1px !important;
-            }
-        }
-    }
-}
-
-/* 余白 */
+// 下の余白
 .u-pb {
     padding-bottom: 64rem !important;
 
@@ -44,18 +27,28 @@ utility > utility
     }
 }
 
-.u-pt {
-    padding-top: 64rem !important;
-
-    @include g.mq() {
-        padding-top: 96rem !important;
-    }
-}
-
+// 上下の余白
 .u-ptb {
     padding-block: 64rem !important;
 
     @include g.mq() {
         padding-block: 96rem !important;
+    }
+}
+
+// テキストホバーのアニメーション
+.u-text-hover {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-size: 0 1px;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s;
+
+    @include g.mq() {
+        @media (any-hover: hover) {
+            &:hover {
+                background-size: 100% 1px;
+            }
+        }
     }
 }

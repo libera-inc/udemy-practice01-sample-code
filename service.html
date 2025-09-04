@@ -12,32 +12,17 @@
         <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="img/webclip.png" />
 
-        <!-- ogp -->
-        <meta property="og:site_name" content="Career Launch - 就活スクール" />
-        <meta property="og:url" content="https://udemy-practice01.vercel.app/service.html" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Service | Career Launch - 就活スクール" />
-        <meta property="og:description" content="ページの説明" />
-        <meta property="og:image" content="https://udemy-practice01.vercel.app/img/ogp.png" />
-        <meta property="og:locale" content="ja_JP" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:description" content="ページの説明" />
-        <meta name="twitter:image:src" content="https://udemy-practice01.vercel.app/img/ogp.png" />
-
         <!-- font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
 
         <!-- css -->
-        <link rel="stylesheet" href="css/vendor/splide-core.min.css" />
         <link rel="stylesheet" href="css/style.css" />
 
         <!-- js -->
         <script src="js/vendor/gsap.min.js" defer></script>
         <script src="js/vendor/ScrollTrigger.min.js" defer></script>
-        <script src="js/vendor/splide-extension-auto-scroll.min.js" defer></script>
-        <script src="js/vendor/splide.min.js" defer></script>
         <script type="module" src="js/main.js"></script>
 
         <!-- noindex -->
@@ -47,7 +32,7 @@
         <header class="l-header js-header">
             <p class="l-header-logo">
                 <a href="/">
-                    <img src="img/logo.svg" width="150" height="28" alt="Career Launch" decoding="async" />
+                    <img src="img/logo.svg" width="251" height="46" alt="Career Launch 就活スクール" decoding="async" />
                 </a>
             </p>
 
@@ -56,40 +41,40 @@
                     <img src="img/icon-cross.svg" width="28" height="28" alt="メニューを閉じる" decoding="async" />
                 </button>
 
-                <nav class="l-header-menu-nav" aria-label="メニュー">
+                <nav class="l-header-menu-nav">
                     <ul class="l-header-menu-list">
                         <li class="l-header-menu-item l-header-menu-item--top">
-                            <a href="/">
+                            <a href="/" class="l-header-menu-link">
                                 <span class="l-header-menu-text-en">Top</span>
                                 <span class="l-header-menu-text-ja">トップ</span>
                             </a>
                         </li>
                         <li class="l-header-menu-item">
-                            <a href="about.html" class="u-text-hover">
+                            <a href="about.html" class="l-header-menu-link u-text-hover">
                                 <span class="l-header-menu-text-en">About</span>
                                 <span class="l-header-menu-text-ja">私たちについて</span>
                             </a>
                         </li>
-                        <li class="l-header-menu-item l-header-menu-item--current">
-                            <a href="service.html" class="u-text-hover">
+                        <li class="l-header-menu-item">
+                            <a href="service.html" class="l-header-menu-link l-header-menu-link--current u-text-hover">
                                 <span class="l-header-menu-text-en">Service</span>
                                 <span class="l-header-menu-text-ja">サービス</span>
                             </a>
                         </li>
                         <li class="l-header-menu-item">
-                            <a href="news.html" class="u-text-hover">
+                            <a href="news.html" class="l-header-menu-link u-text-hover">
                                 <span class="l-header-menu-text-en">News</span>
                                 <span class="l-header-menu-text-ja">お知らせ</span>
                             </a>
                         </li>
                         <li class="l-header-menu-item">
-                            <a href="recruit.html" class="u-text-hover">
+                            <a href="recruit.html" class="l-header-menu-link u-text-hover">
                                 <span class="l-header-menu-text-en">Recruit</span>
                                 <span class="l-header-menu-text-ja">採用情報</span>
                             </a>
                         </li>
-                        <li class="l-header-menu-item l-header-menu-item--contact">
-                            <a href="contact.html">
+                        <li class="l-header-menu-item">
+                            <a href="contact.html" class="l-header-menu-link l-header-menu-link--contact">
                                 <span class="l-header-menu-text-en">Contact</span>
                                 <span class="l-header-menu-text-ja">お問い合わせ</span>
                             </a>
@@ -103,32 +88,33 @@
             </button>
         </header>
 
-        <main class="u-pb">
+        <main>
             <div class="c-page-kv js-header-trigger">
                 <div class="l-container">
                     <div class="c-page-kv-inner">
-                        <div class="c-page-kv-title">
-                            <span>Service</span>
-                            <h1>サービス</h1>
+                        <div class="c-page-kv-title-wrap">
+                            <span class="c-page-kv-title-en">Service</span>
+                            <h1 class="c-page-kv-title-ja">サービス</h1>
                         </div>
 
-                        <ul class="c-breadcrumb">
-                            <li class="c-breadcrumb-item">
-                                <a href="/">Top</a>
-                            </li>
-
-                            <li class="c-breadcrumb-item c-breadcrumb-item--current">Service</li>
-                        </ul>
+                        <div class="c-page-kv-breadcrumb">
+                            <ol class="c-breadcrumb">
+                                <li class="c-breadcrumb-item">
+                                    <a href="">Top</a>
+                                </li>
+                                <li class="c-breadcrumb-item c-breadcrumb-item--current">Service</li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="service-detail-wrap l-container">
-                <section class="service-detail" id="career-support">
+                <section class="service-detail">
                     <div class="service-detail-img">
                         <picture>
-                            <source media="(min-width: 900px)" srcset="img/services/services.jpg" />
-                            <img width="938" height="1105" src="img/services/services-sp.jpg" alt="" decoding="async" />
+                            <source srcset="img/services/services.jpg" media="(min-width: 900px)" />
+                            <img src="img/services/services-sp.jpg" width="287" height="187" alt="..." decoding="async" />
                         </picture>
                     </div>
 
@@ -138,21 +124,20 @@
 
                         <p class="service-detail-period">期間: 4週間（週1回・計4回） 形式: 個別指導 + 少人数グループワーク</p>
 
-                        <p class="service-detail-text"><span>自己理解からはじまる“納得のいく選択”。</span><span>価値観・強み・志向性を明確にし、将来の軸をつくります。</span></p>
+                        <p class="service-detail-text">
+                            <span>自己理解からはじまる“納得のいく選択”。</span>
+                            <span>価値観・強み・志向性を明確にし、将来の軸をつくります。</span>
+                        </p>
 
                         <ul class="service-detail-list">
                             <li class="service-detail-list-item">自己分析ワークショップ（価値観・強み診断）</li>
                             <li class="service-detail-list-item">業界・職種研究セッション</li>
                             <li class="service-detail-list-item">キャリアビジョン設計サポート</li>
                         </ul>
-
-                        <!-- <div class="service-detail-button">
-                            <a href="career-support.html" class="c-button">View more</a>
-                        </div> -->
                     </div>
                 </section>
 
-                <section class="service-detail" id="practice-support">
+                <section class="service-detail">
                     <div class="service-detail-img">
                         <picture>
                             <source media="(min-width: 900px)" srcset="img/services/services02.jpg" />
@@ -173,15 +158,11 @@
                             <li class="service-detail-list-item">模擬面接・フィードバックセッション</li>
                             <li class="service-detail-list-item">グループディスカッション実践演習</li>
                         </ul>
-
-                        <!-- <div class="service-detail-button">
-                            <a href="practice-support.html" class="c-button">View more</a>
-                        </div> -->
                     </div>
                 </section>
             </div>
 
-            <section class="l-container u-pt">
+            <section class="service-case l-container u-ptb">
                 <div class="c-title">
                     <span class="c-title-en">Case</span>
                     <h2 class="c-title-ja">活用事例</h2>
@@ -189,60 +170,64 @@
 
                 <div class="service-case-list">
                     <article class="service-case-item">
-                        <a href="case-detail.html">
+                        <a href="">
                             <div class="service-case-item-img">
-                                <img src="img/services/case.jpg" width="1200" height="800" alt="" decoding="async" />
+                                <img src="img/services/case.jpg" width="335" height="223" alt="" decoding="async" />
                             </div>
-                            <p class="service-case-item-text"><span>経済学部から</span>金融業界に就職</p>
-                            <p class="service-case-item-title">自己分析で『人をサポートする力』が自分の核だと発見できました。</p>
+                            <h3 class="service-case-item-title"><span>経済学部から</span>金融業界に就職</h3>
+                            <p class="service-case-item-text">自己分析で『人をサポートする力』が自分の核だと発見できました。</p>
                             <div class="service-case-item-button">
                                 <span class="c-button c-button--small">View more</span>
                             </div>
                         </a>
                     </article>
+
                     <article class="service-case-item">
                         <a href="case-detail.html">
                             <div class="service-case-item-img">
                                 <img src="img/services/case02.jpg" width="1200" height="800" alt="" decoding="async" />
                             </div>
-                            <p class="service-case-item-text"><span>文学部から</span>IT業界に就職</p>
-                            <p class="service-case-item-title">文系でも論理思考力でIT業界に挑戦できると気づけました。</p>
+                            <h3 class="service-case-item-title"><span>文学部から</span>IT業界に就職</h3>
+                            <p class="service-case-item-text">文系でも論理思考力でIT業界に挑戦できると気づけました。</p>
                             <div class="service-case-item-button">
                                 <span class="c-button c-button--small">View more</span>
                             </div>
                         </a>
                     </article>
+
                     <article class="service-case-item">
                         <a href="case-detail.html">
                             <div class="service-case-item-img">
                                 <img src="img/services/case03.jpg" width="1200" height="800" alt="" decoding="async" />
                             </div>
-                            <p class="service-case-item-text"><span>工学部から</span>自動車メーカーに就職</p>
-                            <p class="service-case-item-title">面接対策で技術内容を分かりやすく伝えるコツを習得しました。</p>
+                            <h3 class="service-case-item-title"><span>工学部から</span>自動車メーカーに就職</h3>
+                            <p class="service-case-item-text">面接対策で技術内容を分かりやすく伝えるコツを習得しました。</p>
                             <div class="service-case-item-button">
                                 <span class="c-button c-button--small">View more</span>
                             </div>
                         </a>
                     </article>
+
                     <article class="service-case-item">
                         <a href="case-detail.html">
                             <div class="service-case-item-img">
                                 <img src="img/services/case04.jpg" width="1200" height="800" alt="" decoding="async" />
                             </div>
-                            <p class="service-case-item-text"><span>商学部から</span>IT業界に就職</p>
-                            <p class="service-case-item-title">弱みを克服し強みを活かすことでIT業界転職成功できました。</p>
+                            <h3 class="service-case-item-title"><span>商学部から</span>IT業界に就職</h3>
+                            <p class="service-case-item-text">弱みを克服し強みを活かすことでIT業界転職成功できました。</p>
                             <div class="service-case-item-button">
                                 <span class="c-button c-button--small">View more</span>
                             </div>
                         </a>
                     </article>
+
                     <article class="service-case-item">
                         <a href="case-detail.html">
                             <div class="service-case-item-img">
                                 <img src="img/services/case05.jpg" width="1200" height="800" alt="" decoding="async" />
                             </div>
-                            <p class="service-case-item-text"><span>心理学部から</span>人材業界に就職</p>
-                            <p class="service-case-item-title">相手に寄り添う力を武器に人材転職を実現しました。</p>
+                            <h3 class="service-case-item-title"><span>心理学部から</span>人材業界に就職</h3>
+                            <p class="service-case-item-text">相手に寄り添う力を武器に人材転職を実現しました。</p>
                             <div class="service-case-item-button">
                                 <span class="c-button c-button--small">View more</span>
                             </div>
@@ -255,7 +240,7 @@
         <footer class="l-footer">
             <div class="l-footer-logo">
                 <a href="/">
-                    <img src="img/logo-white.svg" alt="Career Launch" decoding="async" width="251" height="46" />
+                    <img src="img/logo-white.svg" width="251" height="46" alt="Career Launch 就活スクール" decoding="async" />
                 </a>
             </div>
 
@@ -272,22 +257,18 @@
                 </div>
             </div>
 
-            <ul class="l-footer-nav">
-                <li class="l-footer-nav-item"><a href="about.html" class="u-text-hover">About</a></li>
-                <li class="l-footer-nav-item"><a href="service.html" class="u-text-hover">Service</a></li>
-                <li class="l-footer-nav-item"><a href="news.html" class="u-text-hover">News</a></li>
-                <li class="l-footer-nav-item"><a href="recruit.html" class="u-text-hover">Recruit</a></li>
-                <li class="l-footer-nav-item l-footer-nav-item--contact">
-                    <a href="contact.html">
-                        <span>Contact</span>
-                    </a>
-                </li>
+            <ul class="l-footer-menu-list">
+                <li class="l-footer-menu-item"><a href="about.html" class="u-text-hover">About</a></li>
+                <li class="l-footer-menu-item"><a href="service.html" class="u-text-hover">Service</a></li>
+                <li class="l-footer-menu-item"><a href="news.html" class="u-text-hover">News</a></li>
+                <li class="l-footer-menu-item"><a href="recruit.html" class="u-text-hover">Recruit</a></li>
+                <li class="l-footer-menu-item l-footer-menu-item--contact"><a href="contact.html">Contact</a></li>
             </ul>
 
             <div class="l-footer-legal">
-                <ul class="l-footer-legal-nav">
-                    <li class="l-footer-legal-nav-item"><a href="company.html" class="u-text-hover">Company</a></li>
-                    <li class="l-footer-legal-nav-item"><a href="privacy.html" class="u-text-hover">Privacy Policy</a></li>
+                <ul class="l-footer-legal-list">
+                    <li class="l-footer-legal-item"><a href="" class="u-text-hover">Company</a></li>
+                    <li class="l-footer-legal-item"><a href="" class="u-text-hover">Privacy Policy</a></li>
                 </ul>
 
                 <small class="l-footer-copyright">© 2025 株式会社Career Launch</small>

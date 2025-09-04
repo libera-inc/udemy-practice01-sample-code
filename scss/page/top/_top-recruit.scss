@@ -8,7 +8,7 @@ page > top > top-recruit
     position: relative;
 }
 
-.top-recruit-join-text {
+.top-recruit-img-text {
     color: var(--color-primary);
     font-family: var(--font-family-en);
     font-size: 86rem;
@@ -16,9 +16,8 @@ page > top > top-recruit
     letter-spacing: 0.025em;
     line-height: 1;
     position: absolute;
-    bottom: -33rem;
     left: 20rem;
-    right: 0;
+    bottom: -33rem;
 
     @include g.mq() {
         font-size: 150rem;
@@ -28,31 +27,29 @@ page > top > top-recruit
 }
 
 .top-recruit-content-wrap {
+    margin-top: 80rem;
+
     @include g.mq() {
+        margin-top: 118rem;
         display: grid;
         grid-template-columns: 1fr 50%;
-        padding-top: 118rem;
     }
 }
 
 .top-recruit-content {
-    padding-top: 80rem;
-
     @include g.mq() {
-        padding-top: 0;
         grid-column: 2/3;
         grid-row: 1/2;
     }
 }
 
 .top-recruit-text {
-    margin-top: 16rem;
     font-size: 28rem;
     line-height: 1.6;
+    margin-top: 16rem;
 
     @include g.mq() {
         font-size: 34rem;
-        display: flex;
     }
 
     span {
@@ -65,29 +62,29 @@ page > top > top-recruit
 }
 
 .top-recruit-text02 {
-    line-height: 2.2;
     margin-top: 24rem;
+    line-height: 2.2;
 
     @include g.mq() {
         margin-top: 32rem;
     }
 
     span {
+        &:first-child {
+            display: block;
+        }
+
         @include g.mq() {
             display: block;
         }
     }
 }
 
-.top-recruit-text02-sp-block {
-    display: block;
-}
-
 .top-recruit-text-en {
+    margin-top: 14rem;
+    font-size: 15rem;
     font-family: var(--font-family-en);
     color: var(--color-primary);
-    font-size: 15rem;
-    margin-top: 14rem;
 
     @include g.mq() {
         margin-top: 24rem;
@@ -104,9 +101,9 @@ page > top > top-recruit
     place-items: center;
 
     @include g.mq() {
+        margin-top: 80rem;
         grid-column: 1/2;
         grid-row: 1/2;
-        margin-top: 80rem;
         padding: 0 148rem 0 97rem;
     }
 }

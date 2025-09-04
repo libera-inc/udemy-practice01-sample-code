@@ -6,23 +6,21 @@ component > entry-button
 */
 .c-entry-button {
     width: 290rem;
-    overflow: hidden;
 
     @include g.mq() {
         width: 355rem;
     }
+}
 
-    a {
-        position: relative;
-        display: block;
-        border-radius: 50%;
+.c-entry-button-link {
+    display: block;
+    position: relative;
 
-        @media (any-hover: hover) {
-            &:hover {
-                .c-button {
-                    &:after {
-                        scale: 1.1;
-                    }
+    @media (any-hover: hover) {
+        &:hover {
+            .c-button {
+                &::after {
+                    scale: 1.1;
                 }
             }
         }

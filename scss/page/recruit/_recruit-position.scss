@@ -5,10 +5,10 @@ page > recruit > recruit-position
 ------------------------------
 */
 .recruit-position-list {
-    margin-top: 40rem;
     display: grid;
     grid-template-columns: 1fr;
     gap: 16rem;
+    margin-top: 40rem;
 
     @include g.mq() {
         margin-top: 54rem;
@@ -37,17 +37,16 @@ page > recruit > recruit-position
 
 .recruit-position-title-en {
     font-size: 15rem;
-
-    font-family: var(--font-family-en);
-    color: var(--color-primary);
     margin-top: 4rem;
     display: block;
+    color: var(--color-primary);
+    font-family: var(--font-family-en);
 
     @include g.mq() {
         font-size: 16rem;
     }
 }
 
-.recruit-position-description {
+.recruit-position-text {
     margin-top: 14rem;
 }

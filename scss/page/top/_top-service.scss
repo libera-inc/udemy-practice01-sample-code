@@ -5,44 +5,47 @@ page > top > top-service
 ------------------------------
 */
 .top-service {
-    position: relative;
-    padding-top: 64rem;
     display: grid;
     grid-template-columns: 1fr;
     gap: 40rem;
+    position: relative;
+    padding-block: 64rem;
 
     @include g.mq() {
         grid-template-columns: 1fr 714rem;
         gap: 65rem;
+        padding-top: 64rem;
+        padding-bottom: 96rem;
     }
 
     &::before {
         content: "";
         display: block;
         height: 500rem;
-        width: calc(100% - 20rem);
+        width: 355rem;
         position: absolute;
         left: 0;
         top: 0;
         background-color: var(--color-primary);
         z-index: var(--z-index-negative);
-        border-radius: 0 0 50rem 0;
+        border-radius: 0 0 30rem 0;
 
         @include g.mq() {
-            width: calc(100% - 30rem);
+            width: 1336rem;
             height: 410rem;
+            border-radius: 0 0 50rem 0;
         }
     }
 }
 
 .top-service-text {
-    font-size: 16rem;
     color: var(--color-white);
     margin-top: 40rem;
     padding-right: 20rem;
 
     @include g.mq() {
         padding-right: 0;
+        font-size: 16rem;
     }
 
     span {
@@ -97,16 +100,19 @@ page > top > top-service
 }
 
 .top-service-item-title-en {
+    font-size: 15rem;
     margin-top: 2rem;
     display: block;
     color: var(--color-primary);
     font-family: var(--font-family-en);
-    font-size: 15rem;
 }
 
 .top-service-item-text {
     margin-top: 16rem;
-    font-size: 16rem;
+
+    @include g.mq() {
+        font-size: 16rem;
+    }
 
     span {
         display: block;
@@ -114,7 +120,7 @@ page > top > top-service
 }
 
 .top-service-item-button {
+    margin-top: 16rem;
     display: flex;
     justify-content: flex-end;
-    margin-top: 16rem;
 }

@@ -5,47 +5,38 @@ page > service > service-detail
 ------------------------------
 */
 .service-detail-wrap {
+    margin-top: 20rem;
     display: flex;
     flex-direction: column;
-    gap: calc(64rem + 20rem);
-    margin-top: 20rem;
+    gap: 84rem;
 
     @include g.mq() {
-        gap: 80rem;
         margin-top: 0;
+        gap: 80rem;
     }
 }
 
 .service-detail {
     background-color: var(--color-bg-extra-light);
     padding: 191rem 24rem 40rem;
-    position: relative;
     border-radius: 10rem;
+    position: relative;
 
     @include g.mq() {
-        padding: 0;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        align-items: center;
         border-radius: 14rem;
-        margin-top: 0;
+        overflow: hidden;
+        padding: 0;
 
         &:nth-child(2n) {
             .service-detail-img {
                 left: 0;
                 top: 0;
-
-                img {
-                    @include g.mq() {
-                        border-radius: 14rem 0 0 14rem;
-                    }
-                }
             }
 
             .service-detail-content {
-                @include g.mq() {
-                    grid-column: 2/3;
-                }
+                grid-column: 2/3;
             }
         }
     }
@@ -55,21 +46,21 @@ page > service > service-detail
     position: absolute;
     top: -20rem;
     left: 24rem;
-    width: calc(100% - 48rem);
+    width: 287rem;
 
     @include g.mq() {
-        width: 50%;
-        height: 100%;
         left: auto;
         top: 0;
         right: 0;
+        width: 50%;
+        height: 100%;
     }
 
     img {
         border-radius: 10rem;
 
         @include g.mq() {
-            border-radius: 0 14rem 14rem 0;
+            border-radius: 0;
             height: 100%;
             object-fit: cover;
         }
@@ -79,7 +70,6 @@ page > service > service-detail
 .service-detail-content {
     @include g.mq() {
         padding: 48rem 50rem;
-        grid-column: 1/2;
     }
 }
 
@@ -92,11 +82,11 @@ page > service > service-detail
 }
 
 .service-detail-title-en {
-    font-size: 15rem;
+    display: block;
     font-family: var(--font-family-en);
     color: var(--color-primary);
-    display: block;
     margin-top: 4rem;
+    font-size: 15rem;
 
     @include g.mq() {
         font-size: 16rem;
@@ -115,10 +105,13 @@ page > service > service-detail
 
 .service-detail-text {
     margin-top: 16rem;
-    font-size: 16rem;
 
-    span {
-        @include g.mq() {
+    @include g.mq() {
+        font-size: 16rem;
+    }
+
+    @include g.mq() {
+        span {
             display: block;
         }
     }
@@ -139,12 +132,16 @@ page > service > service-detail
     background-color: var(--color-primary);
     color: var(--color-white);
     padding: 20rem;
-    font-size: 16rem;
     line-height: 1.5;
     border-radius: 6rem;
     display: flex;
     align-items: center;
     gap: 14rem;
+
+    @include g.mq() {
+        font-size: 16rem;
+        padding: 20rem 24rem;
+    }
 
     &::before {
         content: "";
@@ -152,26 +149,10 @@ page > service > service-detail
         flex-shrink: 0;
         width: 24rem;
         aspect-ratio: 1/1;
-        mask-image: url("../img/ico-check.svg");
+        mask-image: url("../img/icon-check.svg");
         mask-size: contain;
         mask-repeat: no-repeat;
         mask-position: center;
         background-color: var(--color-white);
-    }
-}
-
-.service-detail-button {
-    margin-top: 32rem;
-    // display: flex;
-    // justify-content: flex-end;
-
-    .c-button {
-        @media (any-hover: hover) {
-            &:hover {
-                &:after {
-                    scale: 1.1;
-                }
-            }
-        }
     }
 }

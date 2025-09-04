@@ -1,15 +1,17 @@
 @use "../../global" as g;
 
 /*!
-page > news > news-list
+page > news > news-archive
 ------------------------------
 */
-.news-list {
+.news-archive {
     margin-top: -16rem;
-    position: relative;
-    z-index: var(--z-index-default);
 
     @include g.mq() {
         margin-top: -24rem;
     }
+}
+
+.news-archive-pagination {
+    margin-top: 48rem;
 }

@@ -4,28 +4,29 @@
 component > form
 ------------------------------
 */
-// required
+// 必須ラベル
 .c-form-required {
-    font-size: 13rem;
-    color: var(--color-white);
-    padding: 2rem 8rem;
+    display: inline-block;
     background-color: var(--color-red);
+    color: var(--color-white);
+    font-size: 13rem;
+    padding: 2rem 8rem;
     border-radius: 7rem;
 }
 
-// text
 .c-form-text {
     padding: 12rem 8rem;
     border-radius: 8rem;
     background-color: var(--color-bg-extra-light);
-}
+    width: 100%;
 
-.c-form-text::placeholder {
-    color: var(--color-font-light);
-}
+    &::placeholder {
+        color: var(--color-font-light);
+    }
 
-.c-form-text:focus {
-    outline: 1rem solid var(--color-primary);
+    &:focus {
+        outline: 1rem solid var(--color-primary);
+    }
 }
 
 .c-form-text--textarea {
@@ -33,23 +34,20 @@ component > form
     field-sizing: content;
 }
 
-// button
 .c-form-button {
     font-size: 18rem;
-    padding: 13rem 39rem;
-    background-color: var(--color-primary);
-    border-radius: 100vh;
-    color: var(--color-white);
-    border: 1rem solid var(--color-primary);
-    width: fit-content;
-    margin-inline: auto;
-    transition: background-color 0.3s, color 0.3s;
     line-height: 1;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: 1rem solid var(--color-primary);
+    border-radius: 100vh;
+    padding: 13rem 39rem;
+    transition: background-color 0.3s, color 0.3s;
 
     @media (any-hover: hover) {
         &:hover {
-            background-color: var(--color-white);
             color: var(--color-primary);
+            background-color: var(--color-white);
         }
     }
 }
