@@ -6,6 +6,7 @@ component > entry-button
 */
 .c-entry-button {
     width: 290rem;
+    overflow: hidden;
 
     @include g.mq() {
         width: 355rem;

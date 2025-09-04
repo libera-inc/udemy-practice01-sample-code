@@ -352,6 +352,7 @@ component > entry-button
 */
 .c-entry-button {
   width: 290rem;
+  overflow: hidden;
 }
 @media screen and (min-width: 900px) {
   .c-entry-button {
